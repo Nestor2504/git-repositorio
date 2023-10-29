@@ -10,6 +10,10 @@ const cosas: Cosas[] = [
   { id: 3, name: "objeto3", descripcion: "descripcion del objeto 3" },
 ];
 
-export function getAll() {}
+export function getAll() {
+  return cosas;
+}
 
-export function getById(Id: number) {}
+export function getById(Id: number) {
+  return cosas.find((id) => id.id == Id);
+}
